@@ -1,0 +1,88 @@
+<nav class="navbar navbar-default">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <ul class="nav navbar-nav left-nav">
+        <li><a href="#!/home/">Tutte le birre</a></li>
+      </ul>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active"><a href="#!/random/">Una birra random</a></li>
+        <li><a href="#!/favorites/">Preferiti</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<div class="single-beer-view">
+    <div class="single-beer-header">
+      <div class="container">
+          <div class="row">
+            <div class="col-sm-8">
+                <i class="fa-star add-to" ng-class="{fas: $ctrl.beer.isFav === true, far: !$ctrl.beer.isFav}" ng-click="toggleFavs($ctrl.beer)"></i>
+                <h1 ng-click="toggleFavs($ctrl.beer)">{{$ctrl.beer.name}}</h1>
+                <p>{{$ctrl.beer.tagline}}</p>
+            </div>
+          </div>
+      </div>
+    </div>
+    
+    <div class="single-beer-description">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8">
+                <h3 class="heading">Description: </h3>
+                <p>{{$ctrl.beer.description}}</p>
+            </div>
+            <div class="col-sm-4 text-center">
+                <div class="thumb">
+                    <img class="img-responsive" ng-src="{{$ctrl.beer.image_url}}"/>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    <div class="single-beer-line">
+      <div class="container">
+          <div class="specs">
+            <div class="item">
+              ABV: {{$ctrl.beer.abv}}%
+            </div>
+            <div class="item">
+                SRM: {{$ctrl.beer.srm}}
+            </div>
+            <div class="item">
+                EBC: {{$ctrl.beer.ebc}}
+            </div>
+            <div class="item">
+                IBU: {{$ctrl.beer.ibu}}
+            </div>
+          </div>
+      </div>
+        
+    </div>
+        
+    <div class="single-beer-pairings">
+      <div class="container">
+          <h3 class="heading">Abbinamenti: </h3>
+          <div class="pairings row">
+            <div class="col-sm-3 col-xs-6" ng-repeat="foodPairing in $ctrl.beer.food_pairing">
+              <div class="item">
+                <div class="inner">
+                    {{"\"" + foodPairing + "\""}}
+                </div>
+              </div>
+            </div>
+          </div>
+      </div> 
+    </div>
+  </div>

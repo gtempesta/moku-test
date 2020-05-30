@@ -1,0 +1,432 @@
+body{
+  font-family: 'Roboto Slab', serif;
+  background: #f3f3f3;
+}
+
+/* stile per non avere cursori con type numeric */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.navbar-default{
+  background: #000;
+  border: 0;
+  border-radius: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 0;
+}
+
+.navbar-toggle{
+  margin-top: 12px;
+  border: 0;
+  background: transparent;
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus{
+  background: transparent;
+}
+
+.navbar-default .navbar-toggle .icon-bar{
+  background-color: #ccc;
+}
+
+.navbar-collapse{
+  border:0;
+  box-shadow: none;
+}
+
+.navbar-default .navbar-brand{
+  color: #f1c005;
+  font-size: 28px;
+  text-transform: uppercase;
+  height: auto;
+  line-height: 1;
+  font-weight: bold;
+  letter-spacing: 0.04em;
+}
+
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:active, .navbar-default .navbar-brand:focus{
+  color: #f1c005;
+}
+
+.navbar-default .navbar-nav > li > a{
+  color: #888;
+  padding: 4px 12px;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:active, .navbar-default .navbar-nav > li > a:focus{
+  color: #fff;
+  border-color: #fff;
+}
+
+.navbar-default .navbar-nav > li.active > a{
+  color: #fff;
+  background: transparent;
+}
+
+.navbar-default .navbar-nav > li.active > a:hover, .navbar-default .navbar-nav > li.active > a:active, .navbar-default .navbar-nav > li.active > a:focus{
+  color: #fff;
+  background: transparent;
+}
+
+.nav.navbar-nav.left-nav{
+  display: inline-block;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 14px;
+}
+.nav.navbar-nav.left-nav > li{
+  display: inline-block;
+}
+
+.nav.navbar-nav.left-nav > li > a{
+  display: inline-block;
+}
+
+.search-block{
+  padding-top: 15px;
+  padding-bottom: 30px;
+  background: #000;
+}
+
+.search-block label{
+  color: #777;
+  font-weight: 400;
+  font-size: 12px;
+  height: 20px;
+  line-height: 20px;
+  margin-bottom: 0;
+  font-weight: 300;
+}
+
+#filter{
+  margin-top: 20px;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #777;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #777;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #777;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #777;
+}
+
+.search-block .form-control{
+  background: #000;
+  border-radius: 0;
+  border:0;
+  border-bottom: 1px solid #777;
+  padding: 20px 0;
+  font-size: 16px;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.search-block .form-control:focus{
+  box-shadow: none;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+}
+
+.beers-block{
+  padding-top: 52px;
+  padding-bottom: 80px;
+  background: #f3f3f3;
+}
+
+.beers-header h2{
+  color: #777;
+  font-size: 28px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.beers{
+  float:left;
+  width: 100%;
+}
+
+.beer-listing{
+  display: block;
+  padding: 18px;
+  margin-bottom: 15px;
+  line-height: 1.42857143;
+  background-color: #fff;
+  float: left;
+  width: 100%;
+}
+
+.beer-listing:hover{
+  background-color: #f1c005;
+  cursor: pointer;
+}
+
+.beer-listing a{
+  color: #777;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.beer-listing:hover a{
+  color: #fff;
+}
+
+.beer-listing a:hover{
+  color: #fff;
+}
+
+
+.beer-listing .abv{
+  color: #777;
+  display: none;
+  font-weight: 300;
+  font-size: 18px;
+  float:left;
+  line-height: 1;
+  margin-top: 2px;
+  margin-right: 12px;
+}
+
+.beer-listing:hover .abv{
+  color: #fff;
+  display: inline-block;
+}
+
+.beer-listing .add-to{
+  color: #f1c005;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.beer-listing:hover .add-to{
+  color: #fff;
+}
+
+
+.pagination{
+  margin: 0;
+}
+
+.pagination ul li a{
+  color: #777;
+  font-size: 24px;
+}
+
+.pagination ul li a.active{
+  color: #f1c005;
+  /* text-decoration: underline; */
+}
+
+.pagination ul li a:hover{
+  text-decoration: none;
+  color: #f1c005;
+}
+
+.pagination .list-inline{
+  margin-bottom: 0;
+}
+
+.pagination .list-inline > li{
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.single-beer-description .thumb img{
+  display: inline-block;
+  max-width: 180px;
+}
+
+/* View: Beer detail */
+
+.single-beer-view{
+  margin-bottom: 40px;
+}
+
+.single-beer-view p{
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 40px;
+}
+
+.single-beer-view .heading{
+  font-size: 28px;
+  margin-top: 0;
+}
+
+.single-beer-header{
+  background: #000;
+  padding-bottom: 40px;
+}
+
+.single-beer-header h1{
+  color: #f1c005;
+  margin-top: 0;
+  display: inline-block;
+  text-transform: uppercase;
+  cursor: pointer;
+  float: left;
+  display: block;
+  width: calc(100% - 37px);
+}
+
+.single-beer-header .add-to{
+  color: #f1c005;
+  font-size: 22px;
+  margin-right: 12px;
+  cursor: pointer;
+  float: left;
+  display: block;
+  width: 25px;
+  margin-top: 8px;
+}
+
+.single-beer-header p{
+  color: #777;
+  font-size: 28px;
+  float: left;
+}
+
+.single-beer-description{
+  padding-top: 40px;
+  padding-bottom: 40px;
+  color: #777;
+  background: #fff;
+}
+
+.single-beer-line{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: #f1c005;
+  color: #fff;
+}
+
+.single-beer-pairings{
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background: #f3f3f3;
+  color: #777;
+}
+
+.single-beer-pairings .heading{
+  margin-bottom: 20px;
+}
+
+.single-beer-line .item{
+  font-weight: 300;
+}
+
+.single-beer-pairings .pairings{
+  
+}
+
+.single-beer-pairings .pairings .item{
+  font-weight: 300;
+  background: #fff;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 30px;
+  padding-top: 100%; /* 1:1 Aspect Ratio */
+  position: relative; /* If you want text inside of it */
+}
+
+.single-beer-pairings .pairings .item .inner{
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  right: 15px;
+  transform: translateY(-50%);
+  font-size: 16px;
+}
+
+
+.specs {
+  text-align: center;
+}
+
+.specs .item{
+  display: inline-block;
+  padding-left: 12px;
+  padding-right: 12px;
+  font-size: 18px;
+}
+
+.search-block .form-control{
+  font-weight: 300;
+}
+
+@media (min-width: 768px) {
+  .navbar-nav{
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+  .navbar-default .navbar-nav > li + li > a{
+    margin-left: 20px;
+  }
+
+  .navbar-default .navbar-nav > li > a{
+    border: 1px solid #777;
+  }
+  
+  .navbar-default .navbar-nav > li.active > a{
+    border-color: #fff;
+  }
+
+  .navbar-default .navbar-brand{
+    font-size: 32px;
+  }
+
+  .nav.navbar-nav.left-nav{
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+
+  .search-block .form-control{
+    margin-bottom: 0;
+  }
+
+  .beer-listing .abv{
+    margin-right: 24px;
+  }
+
+  .single-beer-pairings .pairings .item{
+    -webkit-box-shadow: 15px 15px 0px 0px #f1c005;
+    -moz-box-shadow: 15px 15px 0px 0px #f1c005;
+    box-shadow: 15px 15px 0px 0px #f1c005;
+  }
+
+  .single-beer-description .thumb{
+    position: relative;
+  }
+
+  .single-beer-description .thumb img{
+    position: relative;
+    z-index: 99;
+    width: 140px;
+    margin-top: -120px;
+  }
+
+  .single-beer-description .thumb:after{
+    content: '';
+    height: 240px;
+    width: 240px;
+    background-color: #f1c005;
+    position: absolute;
+    border-radius: 50%;
+    left: 50%;
+    top: 0;
+    right: 0;
+    margin-top: -160px;
+    z-index: 9;
+    transform: translateX(-50%);
+  }
+
+}
